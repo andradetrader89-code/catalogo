@@ -1,1 +1,304 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Catálogo de Produtos</title><style>*{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}:root{--bg-main:#0b1329;--bg-card:#152238;--bg-card-hover:#1c2d4a;--bg-input:#0e172a;--border-color:#263859;--border-highlight:#38bdf8;--text-main:#f8fafc;--text-muted:#94a3b8;--accent-green:#10b981;--accent-blue:#38bdf8;--accent-red:#ef4444}body{background-color:var(--bg-main);color:var(--text-main);padding-top:76px;padding-bottom:60px;line-height:1.5}.top-bar{position:fixed;top:0;left:0;right:0;height:70px;background:rgba(11,19,41,0.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--border-color);z-index:900;display:flex;align-items:center;justify-content:space-between;padding:0 16px}.top-bar-title h1{font-size:1.15rem;font-weight:800;color:#fff}.top-bar-title p{font-size:0.75rem;color:var(--text-muted)}.btn-cart-header{background:linear-gradient(135deg,#10b981 0%,#059669 100%);color:#fff;border:none;padding:10px 18px;border-radius:24px;font-size:0.9rem;font-weight:800;cursor:pointer;display:flex;align-items:center;gap:8px}.cart-badge{background:#fff;color:#059669;font-size:0.82rem;font-weight:900;padding:2px 8px;border-radius:12px}.container{max-width:1280px;margin:0 auto;padding:14px}.categories-section{margin-bottom:16px}.categories-label{font-size:0.75rem;font-weight:800;text-transform:uppercase;color:#38bdf8;margin-bottom:8px}.tabs-wrapper{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}.tabs-wrapper::-webkit-scrollbar{display:none}.tab-pill{white-space:nowrap;padding:11px 18px;border-radius:14px;font-size:0.9rem;font-weight:800;background:var(--bg-card);border:2px solid var(--border-color);color:var(--text-muted);cursor:pointer;display:flex;align-items:center;gap:8px}.tab-pill.active{background:linear-gradient(135deg,#0284c7 0%,#0369a1 100%);color:#fff;border-color:#38bdf8}.tab-count{font-size:0.75rem;padding:2px 8px;border-radius:10px;background:rgba(0,0,0,0.35);color:#fff}.search-box{background:linear-gradient(135deg,#152238 0%,#0b1329 100%);border:2px solid #0284c7;border-radius:16px;padding:14px;margin-bottom:20px}.search-input-wrapper{position:relative;display:flex;align-items:center}.search-input{width:100%;padding:14px 44px 14px 42px;background-color:var(--bg-input);border:1px solid var(--border-color);border-radius:12px;color:#fff;font-size:0.95rem;font-weight:600;outline:none}.search-icon-left{position:absolute;left:14px;font-size:1.1rem;color:var(--text-muted);pointer-events:none}.btn-clear{position:absolute;right:12px;background:#263859;border:none;color:#f1f5f9;border-radius:6px;padding:6px 10px;font-size:0.78rem;font-weight:700;cursor:pointer;display:none}.search-counter{display:flex;justify-content:space-between;align-items:center;margin-top:10px;font-size:0.8rem;color:var(--text-muted)}.counter-badge{font-weight:800;color:var(--accent-blue);background:rgba(56,189,248,0.12);padding:3px 10px;border-radius:12px}.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}@media(max-width:900px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:580px){.product-grid{grid-template-columns:1fr}}.card{background-color:var(--bg-card);border:1px solid var(--border-color);border-radius:16px;padding:16px;display:flex;flex-direction:column;justify-content:space-between}.card-header-info{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}.brand-badge{display:inline-block;font-size:0.7rem;font-weight:800;text-transform:uppercase;padding:3px 8px;border-radius:6px;width:fit-content}.badge-farmacia{background:rgba(16,185,129,0.15);color:#34d399;border:1px solid rgba(16,185,129,0.3)}.badge-king{background:rgba(251,191,36,0.15);color:#fbbf24;border:1px solid rgba(251,191,36,0.3)}.badge-lander{background:rgba(56,189,248,0.15);color:#38bdf8;border:1px solid rgba(56,189,248,0.3)}.badge-novax{background:rgba(192,132,252,0.15);color:#c084fc;border:1px solid rgba(192,132,252,0.3)}.card-title{font-size:0.98rem;font-weight:800;color:#fff;line-height:1.35}.desc-box{background-color:rgba(14,23,42,0.7);border-left:3px solid var(--accent-blue);border-radius:0 8px 8px 0;padding:10px 12px;margin-bottom:14px}.desc-title{font-size:0.72rem;font-weight:800;text-transform:uppercase;color:var(--accent-blue);margin-bottom:4px}.card-desc{font-size:0.84rem;color:#cbd5e1;line-height:1.4}.price-box{background-color:var(--bg-input);border:1px solid var(--border-color);border-radius:12px;padding:10px 12px;margin-top:auto}.price-option-row{display:flex;flex-direction:column;gap:6px;padding:6px 0}.price-option-row:not(:last-child){border-bottom:1px dashed var(--border-color);margin-bottom:6px;padding-bottom:8px}.opt-info{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.opt-label{font-size:0.78rem;color:var(--text-muted);font-weight:700}.opt-price{font-size:0.98rem;font-weight:900;color:var(--accent-green)}.btn-add-interest{width:100%;padding:9px 12px;background-color:rgba(56,189,248,0.12);color:var(--accent-blue);border:1px solid rgba(56,189,248,0.35);border-radius:10px;font-size:0.82rem;font-weight:800;cursor:pointer}.qty-controls{display:flex;align-items:center;justify-content:space-between;background:#1c2d4a;border:1px solid var(--accent-green);border-radius:10px;overflow:hidden;width:100%}.qty-btn{background:none;border:none;color:#fff;padding:6px 14px;font-size:0.95rem;font-weight:900;cursor:pointer}.qty-val{font-size:0.85rem;font-weight:800;color:#34d399}.empty-msg{grid-column:1/-1;text-align:center;padding:50px 20px;color:var(--text-muted);background:var(--bg-card);border-radius:16px;border:1px dashed var(--border-color)}.modal-overlay{position:fixed;inset:0;background-color:rgba(0,0,0,0.88);backdrop-filter:blur(6px);z-index:1000;display:flex;align-items:center;justify-content:center;padding:16px}.modal-overlay.hidden{display:none}.modal-card{background-color:var(--bg-card);border:1px solid var(--border-color);border-radius:20px;width:100%;max-width:520px;max-height:90vh;display:flex;flex-direction:column}.modal-header{padding:16px 20px;border-bottom:1px solid var(--border-color);display:flex;justify-content:space-between;align-items:center}.modal-title{font-size:1.1rem;font-weight:800;color:#fff}.btn-close{background:none;border:none;color:var(--text-muted);font-size:1.5rem;cursor:pointer}.modal-body{padding:16px 20px;overflow-y:auto;flex:1;display:flex;flex-direction:column;gap:12px}.cart-item-row{background-color:var(--bg-input);border:1px solid var(--border-color);border-radius:12px;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:10px}.cart-item-info{display:flex;flex-direction:column;gap:3px;flex:1}.cart-item-name{font-size:0.88rem;font-weight:800;color:#fff}.cart-item-opt{font-size:0.78rem;color:var(--accent-blue);font-weight:700}.btn-remove{background:rgba(239,68,68,0.15);border:1px solid rgba(239,68,68,0.3);color:var(--accent-red);border-radius:8px;padding:6px 10px;font-size:0.82rem;cursor:pointer}.customer-input-group{display:flex;flex-direction:column;gap:6px;margin-top:6px}.customer-label{font-size:0.75rem;font-weight:800;color:var(--text-muted);text-transform:uppercase}.customer-input{width:100%;padding:12px 14px;background-color:var(--bg-input);border:1px solid var(--border-color);border-radius:12px;color:#fff;font-size:0.95rem;outline:none}.cart-total-box{background:linear-gradient(135deg,#0f172a 0%,#060a12 100%);border:1px solid var(--border-color);border-radius:14px;padding:14px;display:flex;justify-content:space-between;align-items:center}.total-label{font-size:0.82rem;color:var(--text-muted);font-weight:700}.total-val{font-size:1.35rem;font-weight:900;color:var(--accent-green)}.modal-footer{padding:16px 20px;border-top:1px solid var(--border-color)}.btn-copy-big{width:100%;padding:16px;background:linear-gradient(135deg,#10b981 0%,#059669 100%);color:#fff;border:none;border-radius:14px;font-size:0.95rem;font-weight:900;cursor:pointer;text-transform:uppercase}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120px);background:#10b981;color:#fff;padding:12px 24px;border-radius:30px;font-size:0.88rem;font-weight:800;transition:transform 0.3s ease;z-index:2000;pointer-events:none}.toast.show{transform:translateX(-50%) translateY(0)}</style></head><body><div class="top-bar"><div class="top-bar-title"><h1>📦 Catálogo de Produtos</h1><p>Consulte e monte seu pedido</p></div><button class="btn-cart-header" onclick="openCartModal()"><span>🛍️ Meu Pedido</span><span id="headerCartBadge" class="cart-badge">0</span></button></div><div class="container"><div class="categories-section"><div class="categories-label">🏷️ MARCA OU CATEGORIA</div><div class="tabs-wrapper" id="tabsContainer"></div></div><div class="search-box"><div class="search-input-wrapper"><span class="search-icon-left">🔎</span><input type="search" id="searchInput" class="search-input" oninput="render()" placeholder="Buscar por nome, marca ou para que serve..."><button id="btnClear" class="btn-clear" onclick="clearSearch()">✕ Limpar</button></div><div class="search-counter"><span>Busca no catálogo</span><span id="counterBadge" class="counter-badge">29 itens</span></div></div><main class="product-grid" id="productGrid"></main><div id="emptyState" class="empty-msg" style="display:none;">Nenhum produto encontrado com esse nome. Tente apagar a busca ou selecionar outra aba acima.</div></div><div id="cartModal" class="modal-overlay hidden"><div class="modal-card"><div class="modal-header"><h3 class="modal-title">🛍️ Resumo do Seu Pedido</h3><button class="btn-close" onclick="closeCartModal()">✕</button></div><div class="modal-body"><div id="cartItemsList"></div><div class="customer-input-group"><label class="customer-label">Seu Nome (Opcional):</label><input type="text" id="customerName" class="customer-input" placeholder="ex: Marcos Silva"></div><div class="cart-total-box"><span class="total-label">VALOR TOTAL ESTIMADO:</span><span id="cartTotalVal" class="total-val">R$ 0,00</span></div></div><div class="modal-footer"><button class="btn-copy-big" onclick="copyAndDirectWhatsApp()">📋 COPIAR PEDIDO E ENVIAR NO WHATSAPP</button></div></div></div><div id="toast" class="toast">✓ Pedido copiado com sucesso!</div><script>const PRODUCTS=[{"id":"1","category":"Farmácia","name":"Roacutam 20mg (30cp)","desc":"Tratamento eficaz para acne severa e cravos resistentes; reduz acentuadamente a oleosidade da pele e previne cicatrizes.","options":[{"label":"Caixa (30cp)","price":"R$ 210,00","numPrice":210}]},{"id":"2","category":"Farmácia","name":"Sibutramina 15mg (30cp)","desc":"Auxilia no controle do apetite e no aumento da sensação de saciedade, facilitando a adesão a dietas de emagrecimento.","options":[{"label":"Caixa (30cp)","price":"R$ 110,00","numPrice":110}]},{"id":"3","category":"Farmácia","name":"Tadala Eurofarma 20mg (4cp)","desc":"Vasodilatador de ação rápida para melhoria da circulação e firmeza sob demanda pontual.","options":[{"label":"Caixa (4cp)","price":"R$ 25,00","numPrice":25}]},{"id":"4","category":"Farmácia","name":"Tadala Eurofarma 5mg (30cp)","desc":"Uso diário contínuo para suporte vascular, melhora do pump no treino e disposição física constante.","options":[{"label":"Caixa (30cp)","price":"R$ 25,00","numPrice":25}]},{"id":"5","category":"Farmácia","name":"Venvanse Lispax 30mg (5 cartelas de 6cp = 30cp)","desc":"Estimulante central para foco elevado, atenção sustentada, clareza mental e alto desempenho cognitivo nas tarefas diárias.","options":[{"label":"Caixa (30cp)","price":"R$ 410,00","numPrice:410},{"label":"Cartela (6cp)","price":"R$ 100,00","numPrice:100},{"label":"Unidade (1cp)","price":"R$ 30,00","numPrice:30}]},{"id":"6","category":"Farmácia","name":"Venvanse Lispax 50mg (5 cartelas de 6cp = 30cp)","desc":"Dosagem intermediária para concentração prolongada, alerta contínuo e alta produtividade nos estudos ou trabalho de alta exigência.","options":[{"label":"Caixa (30cp)","price":"R$ 490,00","numPrice:490},{"label":"Cartela (6cp)","price":"R$ 120,00","numPrice:120},{"label":"Unidade (1cp)","price":"R$ 45,00","numPrice:45}]},{"id":"7","category":"Farmácia","name":"Venvanse Cooper Manipulado 30mg (pote 30 caps)","desc":"Fórmula manipulada em cápsulas para melhoria do foco, redução da dispersão e suporte ao rendimento intelectual.","options":[{"label":"Pote (30 caps)","price":"R$ 410,00","numPrice:410},{"label":"Cápsula (1 cap)","price":"R$ 25,00","numPrice:25}]},{"id":"8","category":"Farmácia","name":"Venvanse Cooper Manipulado 70mg (pote 30 caps)","desc":"Alta dosagem para performance cognitiva avançada, resposta rápida e sustentação intensa em rotinas exigentes.","options":[{"label":"Pote (30 caps)","price":"R$ 530,00","numPrice:530},{"label":"Cápsula (1 cap)","price":"R$ 30,00","numPrice:30}]},{"id":"9","category":"Novax","name":"PT-141 (10mg + 2ml Água Bac)","desc":"Peptídeo voltado ao estímulo do desejo e da resposta sexual com ação central (até 10 aplicações fracionadas).","options":[{"label":"Frasco","price":"R$ 550,00","numPrice:550},{"label":"Aplicação / Dose","price":"R$ 100,00","numPrice:100}]},{"id":"10","category":"Farmácia","name":"Finasterida 1mg (30cp)","desc":"Inibidor da 5-alfa-redutase para prevenção da queda capilar androgenética.","options":[{"label":"Caixa (30cp)","price":"R$ 45,00","numPrice:45}]},{"id":"11","category":"Farmácia","name":"Minoxidil 5% (60ml)","desc":"Solução tópica vasodilatadora para estímulo do crescimento capilar.","options":[{"label":"Frasco (60ml)","price":"R$ 65,00","numPrice:65}]},{"id":"12","category":"Farmácia","name":"Melatonina 5mg (60cp)","desc":"Suporte para regulação do ciclo do sono e recuperação noturna.","options":[{"label":"Frasco (60cp)","price":"R$ 55,00","numPrice:55}]},{"id":"13","category":"King","name":"Enantato de Testosterona King","desc":"Éster de meia-vida prolongada para suporte hormonal e ganho de força e massa.","options":[{"label":"Bujao 10ml","price":"R$ 180,00","numPrice:180}]},{"id":"14","category":"King","name":"Decanoato de Nandrolona King","desc":"Composto anabólico voltado a ganhos sólidos e conforto articular.","options":[{"label":"Bujao 10ml","price":"R$ 190,00","numPrice:190}]},{"id":"15","category":"King","name":"Boldenona Undecilenato King","desc":"Auxilia no ganho gradual de massa magra, vascularização e apetite.","options":[{"label":"Bujao 10ml","price":"R$ 185,00","numPrice:185}]},{"id":"16","category":"King","name":"Trembolona Acetato King","desc":"Composto potente para densidade muscular e definição em fases avançadas.","options":[{"label":"Bujao 10ml","price":"R$ 220,00","numPrice:220}]},{"id":"17","category":"King","name":"Masteron Propionato King","desc":"Favorece aspecto seco, rigidez muscular e definição.","options":[{"label":"Bujao 10ml","price":"R$ 210,00","numPrice:210}]},{"id":"18","category":"King","name":"Stanozolol Injetável King","desc":"Voltado para qualidade muscular, força e redução de retenção.","options":[{"label":"Bujao 10ml","price":"R$ 175,00","numPrice:175}]},{"id":"19","category":"King","name":"Oxandrolona 10mg King","desc":"Opção oral associada a ganhos limpos e preservação de massa magra.","options":[{"label":"Pote (100cp)","price":"R$ 210,00","numPrice:210}]},{"id":"20","category":"King","name":"Dianabol 10mg King","desc":"Composto oral de ação rápida para força e volume inicial.","options":[{"label":"Pote (100cp)","price":"R$ 140,00","numPrice:140}]},{"id":"21","category":"Lander","name":"Durateston Landerlan","desc":"Blend de quatro ésteres de testosterona para liberação gradual.","options":[{"label":"Bujao","price":"R$ 195,00","numPrice:195}]},{"id":"22","category":"Lander","name":"Deposteron / Cipionato Landerlan","desc":"Éster de ação prolongada para estabilidade hormonal.","options":[{"label":"Bujao","price":"R$ 185,00","numPrice:185}]},{"id":"23","category":"Lander","name":"Deca Landerlan","desc":"Suporte anabólico clássico para volume e recuperação.","options":[{"label":"Bujao","price":"R$ 190,00","numPrice:190}]},{"id":"24","category":"Lander","name":"Equipoise / Boldenona Landerlan","desc":"Promove ganhos consistentes e melhora do aspecto físico.","options":[{"label":"Bujao","price":"R$ 185,00","numPrice:185}]},{"id":"25","category":"Lander","name":"Stanozolol Landerlan","desc":"Foco em definição, firmeza e força.","options":[{"label":"Bujao","price":"R$ 175,00","numPrice:175}]},{"id":"26","category":"Lander","name":"Oxandrolona Landerlan","desc":"Comprimidos voltados a qualidade muscular e definição.","options":[{"label":"Frasco","price":"R$ 220,00","numPrice:220}]},{"id":"27","category":"Lander","name":"Clenbuterol Landerlan","desc":"Termogênico beta-2 agonista para auxílio em fases de cutting.","options":[{"label":"Frasco","price":"R$ 120,00","numPrice:120}]},{"id":"28","category":"Lander","name":"HCG Landerlan","desc":"Gonadotrofina coriônica humana utilizada em protocolos específicos.","options":[{"label":"Caixa","price":"R$ 240,00","numPrice:240}]},{"id":"29","category":"Lander","name":"Enantato de Testosterona Landerlan","desc":"Testosterona de liberação sustentada para base de protocolo, força e massa muscular.","options":[{"label":"Bujao 10ml","price":"R$ 230,00","numPrice:230}]}];const CATEGORIES=["Todos","Farmácia","King","Lander","Novax"];let activeCategory="Todos",cart=[];function getBadgeClass(c){return"Farmácia"===c?"badge-farmacia":"King"===c?"badge-king":"Lander"===c?"badge-lander":"badge-novax"}function renderTabs(){const w=document.getElementById("tabsContainer");w.innerHTML="",CATEGORIES.forEach(c=>{const n="Todos"===c?PRODUCTS.length:PRODUCTS.filter(p=>p.category===c).length,b=document.createElement("button");b.className="tab-pill"+(activeCategory===c?" active":""),b.innerHTML=`<span>${c}</span><span class="tab-count">${n}</span>`,b.onclick=()=>{activeCategory=c,render()},w.appendChild(b)})}function getQty(id,l){const f=cart.find(i=>i.prodId===id&&i.label===l);return f?f.qty:0}function addItem(id,name,l,price,num){const f=cart.find(i=>i.prodId===id&&i.label===l);f?f.qty+=1:cart.push({prodId:id,prodName:name,label:l,price:price,numPrice:num,qty:1}),updateBadges(),render()}function changeQty(id,l,d){const i=cart.findIndex(x=>x.prodId===id&&x.label===l);-1!==i&&(cart[i].qty+=d,cart[i].qty<=0&&cart.splice(i,1),updateBadges(),render(),document.getElementById("cartModal").classList.contains("hidden")||renderCartModal())}function updateBadges(){const t=cart.reduce((a,b)=>a+b.qty,0);document.getElementById("headerCartBadge").textContent=t}function clearSearch(){const i=document.getElementById("searchInput");i.value="",document.getElementById("btnClear").style.display="none",render()}function render(){renderTabs();const i=document.getElementById("searchInput"),t=(i?i.value:"").trim().toLowerCase();document.getElementById("btnClear").style.display=t?"block":"none";const f=PRODUCTS.filter(p=>("Todos"===activeCategory||p.category===activeCategory)&&(!t||p.name.toLowerCase().includes(t)||p.category.toLowerCase().includes(t)||p.desc.toLowerCase().includes(t)));document.getElementById("counterBadge").textContent=`${f.length} ${1===f.length?"item":"itens"}`;const g=document.getElementById("productGrid"),e=document.getElementById("emptyState");if(g.innerHTML="",0===f.length)return void(e.style.display="block");e.style.display="none",f.forEach(p=>{const c=document.createElement("article");c.className="card";const o=p.options.map(op=>{const q=getQty(p.id,op.label),sn=p.name.replace(/'/g,"\\'"),sl=op.label.replace(/'/g,"\\'"),ct=q>0?`<div class="qty-controls"><button class="qty-btn" onclick="changeQty('${p.id}','${sl}',-1)">-</button><span class="qty-val">${q} no pedido</span><button class="qty-btn" onclick="changeQty('${p.id}','${sl}',1)">+</button></div>`:`<button class="btn-add-interest" onclick="addItem('${p.id}','${sn}','${sl}','${op.price}',${op.numPrice})">+ Adicionar ao pedido</button>`;return`<div class="price-option-row"><div class="opt-info"><span class="opt-label">${op.label}</span><span class="opt-price">${op.price}</span></div>${ct}</div>`}).join("");c.innerHTML=`<div><div class="card-header-info"><span class="brand-badge ${getBadgeClass(p.category)}">${p.category}</span><h2 class="card-title">${p.name}</h2></div><div class="desc-box"><div class="desc-title">Para que serve</div><p class="card-desc">${p.desc}</p></div></div><div class="price-box">${o}</div>`,g.appendChild(c)})}function openCartModal(){renderCartModal(),document.getElementById("cartModal").classList.remove("hidden")}function closeCartModal(){document.getElementById("cartModal").classList.add("hidden")}function renderCartModal(){const l=document.getElementById("cartItemsList");if(0===cart.length)return l.innerHTML='<div style="text-align:center;color:#94a3b8;padding:20px;">Seu pedido está vazio. Adicione itens no catálogo.</div>',void(document.getElementById("cartTotalVal").textContent="R$ 0,00");let t=0;l.innerHTML=cart.map(x=>{const s=x.numPrice*x.qty;t+=s;const sl=x.label.replace(/'/g,"\\'");return`<div class="cart-item-row"><div class="cart-item-info"><span class="cart-item-name">${x.qty}x ${x.prodName}</span><span class="cart-item-opt">${x.label} • ${x.price}</span></div><button class="btn-remove" onclick="changeQty('${x.prodId}','${sl}',-${x.qty})">✕</button></div>`}).join(""),document.getElementById("cartTotalVal").textContent=t.toLocaleString("pt-BR",{style:"currency",currency:"BRL"})}function showToast(m){const t=document.getElementById("toast");t.textContent=m,t.classList.add("show"),setTimeout(()=>t.classList.remove("show"),2500)}function copyAndDirectWhatsApp(){if(0===cart.length)return void showToast("Adicione pelo menos 1 item primeiro.");const n=document.getElementById("customerName").value.trim();let t=0;const lines=cart.map(x=>(t+=x.numPrice*x.qty,`• ${x.qty}x ${x.prodName} (${x.label}) - ${x.price}`)),txt=[n?`Olá! Meu nome é ${n}. Gostaria de fazer este pedido:`:"Olá! Gostaria de fazer este pedido:",...lines,`Total estimado: ${t.toLocaleString("pt-BR",{style:"currency",currency:"BRL"})}`].join("\n");navigator.clipboard&&navigator.clipboard.writeText&&navigator.clipboard.writeText(txt).catch(()=>{}),showToast("✓ Pedido copiado!"),window.open("https://wa.me/?text="+encodeURIComponent(txt),"_blank")}render();</script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Produtos</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+    :root{--bg-main:#0b1329;--bg-card:#152238;--bg-card-hover:#1c2d4a;--bg-input:#0e172a;--border-color:#263859;--border-highlight:#38bdf8;--text-main:#f8fafc;--text-muted:#94a3b8;--accent-green:#10b981;--accent-blue:#38bdf8;--accent-red:#ef4444}
+    body{background-color:var(--bg-main);color:var(--text-main);padding-top:76px;padding-bottom:60px;line-height:1.5}
+    .top-bar{position:fixed;top:0;left:0;right:0;height:70px;background:rgba(11,19,41,0.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--border-color);z-index:900;display:flex;align-items:center;justify-content:space-between;padding:0 16px}
+    .top-bar-title h1{font-size:1.15rem;font-weight:800;color:#fff}
+    .top-bar-title p{font-size:0.75rem;color:var(--text-muted)}
+    .btn-cart-header{background:linear-gradient(135deg,#10b981 0%,#059669 100%);color:#fff;border:none;padding:10px 18px;border-radius:24px;font-size:0.9rem;font-weight:800;cursor:pointer;display:flex;align-items:center;gap:8px}
+    .cart-badge{background:#fff;color:#059669;font-size:0.82rem;font-weight:900;padding:2px 8px;border-radius:12px}
+    .container{max-width:1280px;margin:0 auto;padding:14px}
+    .categories-section{margin-bottom:16px}
+    .categories-label{font-size:0.75rem;font-weight:800;text-transform:uppercase;color:#38bdf8;margin-bottom:8px}
+    .tabs-wrapper{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}
+    .tabs-wrapper::-webkit-scrollbar{display:none}
+    .tab-pill{white-space:nowrap;padding:11px 18px;border-radius:14px;font-size:0.9rem;font-weight:800;background:var(--bg-card);border:2px solid var(--border-color);color:var(--text-muted);cursor:pointer;display:flex;align-items:center;gap:8px}
+    .tab-pill.active{background:linear-gradient(135deg,#0284c7 0%,#0369a1 100%);color:#fff;border-color:#38bdf8}
+    .tab-count{font-size:0.75rem;padding:2px 8px;border-radius:10px;background:rgba(0,0,0,0.35);color:#fff}
+    .search-box{background:linear-gradient(135deg,#152238 0%,#0b1329 100%);border:2px solid #0284c7;border-radius:16px;padding:14px;margin-bottom:20px}
+    .search-input-wrapper{position:relative;display:flex;align-items:center}
+    .search-input{width:100%;padding:14px 44px 14px 42px;background-color:var(--bg-input);border:1px solid var(--border-color);border-radius:12px;color:#fff;font-size:0.95rem;font-weight:600;outline:none}
+    .search-icon-left{position:absolute;left:14px;font-size:1.1rem;color:var(--text-muted);pointer-events:none}
+    .btn-clear{position:absolute;right:12px;background:#263859;border:none;color:#f1f5f9;border-radius:6px;padding:6px 10px;font-size:0.78rem;font-weight:700;cursor:pointer;display:none}
+    .search-counter{display:flex;justify-content:space-between;align-items:center;margin-top:10px;font-size:0.8rem;color:var(--text-muted)}
+    .counter-badge{font-weight:800;color:var(--accent-blue);background:rgba(56,189,248,0.12);padding:3px 10px;border-radius:12px}
+    .product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    @media(max-width:900px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:580px){.product-grid{grid-template-columns:1fr}}
+    .card{background-color:var(--bg-card);border:1px solid var(--border-color);border-radius:16px;padding:16px;display:flex;flex-direction:column;justify-content:space-between}
+    .card-header-info{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+    .brand-badge{display:inline-block;font-size:0.7rem;font-weight:800;text-transform:uppercase;padding:3px 8px;border-radius:6px;width:fit-content}
+    .badge-farmacia{background:rgba(16,185,129,0.15);color:#34d399;border:1px solid rgba(16,185,129,0.3)}
+    .badge-king{background:rgba(251,191,36,0.15);color:#fbbf24;border:1px solid rgba(251,191,36,0.3)}
+    .badge-lander{background:rgba(56,189,248,0.15);color:#38bdf8;border:1px solid rgba(56,189,248,0.3)}
+    .badge-novax{background:rgba(192,132,252,0.15);color:#c084fc;border:1px solid rgba(192,132,252,0.3)}
+    .card-title{font-size:0.98rem;font-weight:800;color:#fff;line-height:1.35}
+    .desc-box{background-color:rgba(14,23,42,0.7);border-left:3px solid var(--accent-blue);border-radius:0 8px 8px 0;padding:10px 12px;margin-bottom:14px}
+    .desc-title{font-size:0.72rem;font-weight:800;text-transform:uppercase;color:var(--accent-blue);margin-bottom:4px}
+    .card-desc{font-size:0.84rem;color:#cbd5e1;line-height:1.4}
+    .price-box{background-color:var(--bg-input);border:1px solid var(--border-color);border-radius:12px;padding:10px 12px;margin-top:auto}
+    .price-option-row{display:flex;flex-direction:column;gap:6px;padding:6px 0}
+    .price-option-row:not(:last-child){border-bottom:1px dashed var(--border-color);margin-bottom:6px;padding-bottom:8px}
+    .opt-info{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+    .opt-label{font-size:0.78rem;color:var(--text-muted);font-weight:700}
+    .opt-price{font-size:0.98rem;font-weight:900;color:var(--accent-green)}
+    .btn-add-interest{width:100%;padding:9px 12px;background-color:rgba(56,189,248,0.12);color:var(--accent-blue);border:1px solid rgba(56,189,248,0.35);border-radius:10px;font-size:0.82rem;font-weight:800;cursor:pointer}
+    .qty-controls{display:flex;align-items:center;justify-content:space-between;background:#1c2d4a;border:1px solid var(--accent-green);border-radius:10px;overflow:hidden;width:100%}
+    .qty-btn{background:none;border:none;color:#fff;padding:6px 14px;font-size:0.95rem;font-weight:900;cursor:pointer}
+    .qty-val{font-size:0.85rem;font-weight:800;color:#34d399}
+    .empty-msg{grid-column:1/-1;text-align:center;padding:50px 20px;color:var(--text-muted);background:var(--bg-card);border-radius:16px;border:1px dashed var(--border-color)}
+    .modal-overlay{position:fixed;inset:0;background-color:rgba(0,0,0,0.88);backdrop-filter:blur(6px);z-index:1000;display:flex;align-items:center;justify-content:center;padding:16px}
+    .modal-overlay.hidden{display:none}
+    .modal-card{background-color:var(--bg-card);border:1px solid var(--border-color);border-radius:20px;width:100%;max-width:520px;max-height:90vh;display:flex;flex-direction:column}
+    .modal-header{padding:16px 20px;border-bottom:1px solid var(--border-color);display:flex;justify-content:space-between;align-items:center}
+    .modal-title{font-size:1.1rem;font-weight:800;color:#fff}
+    .btn-close{background:none;border:none;color:var(--text-muted);font-size:1.5rem;cursor:pointer}
+    .modal-body{padding:16px 20px;overflow-y:auto;flex:1;display:flex;flex-direction:column;gap:12px}
+    .cart-item-row{background-color:var(--bg-input);border:1px solid var(--border-color);border-radius:12px;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .cart-item-info{display:flex;flex-direction:column;gap:3px;flex:1}
+    .cart-item-name{font-size:0.88rem;font-weight:800;color:#fff}
+    .cart-item-opt{font-size:0.78rem;color:var(--accent-blue);font-weight:700}
+    .btn-remove{background:rgba(239,68,68,0.15);border:1px solid rgba(239,68,68,0.3);color:var(--accent-red);border-radius:8px;padding:6px 10px;font-size:0.82rem;cursor:pointer}
+    .customer-input-group{display:flex;flex-direction:column;gap:6px;margin-top:6px}
+    .customer-label{font-size:0.75rem;font-weight:800;color:var(--text-muted);text-transform:uppercase}
+    .customer-input{width:100%;padding:12px 14px;background-color:var(--bg-input);border:1px solid var(--border-color);border-radius:12px;color:#fff;font-size:0.95rem;outline:none}
+    .cart-total-box{background:linear-gradient(135deg,#0f172a 0%,#060a12 100%);border:1px solid var(--border-color);border-radius:14px;padding:14px;display:flex;justify-content:space-between;align-items:center}
+    .total-label{font-size:0.82rem;color:var(--text-muted);font-weight:700}
+    .total-val{font-size:1.35rem;font-weight:900;color:var(--accent-green)}
+    .modal-footer{padding:16px 20px;border-top:1px solid var(--border-color)}
+    .btn-copy-big{width:100%;padding:16px;background:linear-gradient(135deg,#10b981 0%,#059669 100%);color:#fff;border:none;border-radius:14px;font-size:0.95rem;font-weight:900;cursor:pointer;text-transform:uppercase}
+    .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120px);background:#10b981;color:#fff;padding:12px 24px;border-radius:30px;font-size:0.88rem;font-weight:800;transition:transform 0.3s ease;z-index:2000;pointer-events:none}
+    .toast.show{transform:translateX(-50%) translateY(0)}
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="top-bar-title">
+      <h1>📦 Catálogo de Produtos</h1>
+      <p>Consulte e monte seu pedido</p>
+    </div>
+    <button class="btn-cart-header" onclick="openCartModal()">
+      <span>🛍️ Meu Pedido</span>
+      <span id="headerCartBadge" class="cart-badge">0</span>
+    </button>
+  </div>
+
+  <div class="container">
+    <div class="categories-section">
+      <div class="categories-label">🏷️ MARCA OU CATEGORIA</div>
+      <div class="tabs-wrapper" id="tabsContainer"></div>
+    </div>
+
+    <div class="search-box">
+      <div class="search-input-wrapper">
+        <span class="search-icon-left">🔎</span>
+        <input type="search" id="searchInput" class="search-input" oninput="render()" placeholder="Buscar por nome, marca ou para que serve...">
+        <button id="btnClear" class="btn-clear" onclick="clearSearch()">✕ Limpar</button>
+      </div>
+      <div class="search-counter">
+        <span>Busca no catálogo</span>
+        <span id="counterBadge" class="counter-badge">29 itens</span>
+      </div>
+    </div>
+
+    <main class="product-grid" id="productGrid"></main>
+    <div id="emptyState" class="empty-msg" style="display:none;">Nenhum produto encontrado com esse nome. Tente apagar a busca ou selecionar outra aba acima.</div>
+  </div>
+
+  <div id="cartModal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">🛍️ Resumo do Seu Pedido</h3>
+        <button class="btn-close" onclick="closeCartModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div id="cartItemsList"></div>
+        <div class="customer-input-group">
+          <label class="customer-label">Seu Nome (Opcional):</label>
+          <input type="text" id="customerName" class="customer-input" placeholder="ex: Marcos Silva">
+        </div>
+        <div class="cart-total-box">
+          <span class="total-label">VALOR TOTAL ESTIMADO:</span>
+          <span id="cartTotalVal" class="total-val">R$ 0,00</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-copy-big" onclick="copyAndDirectWhatsApp()">📋 COPIAR PEDIDO E ENVIAR NO WHATSAPP</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">✓ Pedido copiado com sucesso!</div>
+
+  <script>
+    const PRODUCTS = [
+      {"id":"1","category":"Farmácia","name":"Roacutam 20mg (30cp)","desc":"Tratamento eficaz para acne severa e cravos resistentes; reduz acentuadamente a oleosidade da pele e previne cicatrizes.","options":[{"label":"Caixa (30cp)","price":"R$ 210,00","numPrice":210}]},
+      {"id":"2","category":"Farmácia","name":"Sibutramina 15mg (30cp)","desc":"Auxilia no controle do apetite e no aumento da sensação de saciedade, facilitando a adesão a dietas de emagrecimento.","options":[{"label":"Caixa (30cp)","price":"R$ 110,00","numPrice":110}]},
+      {"id":"3","category":"Farmácia","name":"Tadala Eurofarma 20mg (4cp)","desc":"Vasodilatador de ação rápida para melhoria da circulação e firmeza sob demanda pontual.","options":[{"label":"Caixa (4cp)","price":"R$ 25,00","numPrice":25}]},
+      {"id":"4","category":"Farmácia","name":"Tadala Eurofarma 5mg (30cp)","desc":"Uso diário contínuo para suporte vascular, melhora do pump no treino e disposição física constante.","options":[{"label":"Caixa (30cp)","price":"R$ 25,00","numPrice":25}]},
+      {"id":"5","category":"Farmácia","name":"Venvanse Lispax 30mg (5 cartelas de 6cp = 30cp)","desc":"Estimulante central para foco elevado, atenção sustentada, clareza mental e alto desempenho cognitivo nas tarefas diárias.","options":[{"label":"Caixa (30cp)","price":"R$ 410,00","numPrice:410},{"label":"Cartela (6cp)","price":"R$ 100,00","numPrice:100},{"label":"Unidade (1cp)","price":"R$ 30,00","numPrice:30}]},
+      {"id":"6","category":"Farmácia","name":"Venvanse Lispax 50mg (5 cartelas de 6cp = 30cp)","desc":"Dosagem intermediária para concentração prolongada, alerta contínuo e alta produtividade nos estudos ou trabalho de alta exigência.","options":[{"label":"Caixa (30cp)","price":"R$ 490,00","numPrice:490},{"label":"Cartela (6cp)","price":"R$ 120,00","numPrice:120},{"label":"Unidade (1cp)","price":"R$ 45,00","numPrice:45}]},
+      {"id":"7","category":"Farmácia","name":"Venvanse Cooper Manipulado 30mg (pote 30 caps)","desc":"Fórmula manipulada em cápsulas para melhoria do foco, redução da dispersão e suporte ao rendimento intelectual.","options":[{"label":"Pote (30 caps)","price":"R$ 410,00","numPrice:410},{"label":"Cápsula (1 cap)","price":"R$ 25,00","numPrice:25}]},
+      {"id":"8","category":"Farmácia","name":"Venvanse Cooper Manipulado 70mg (pote 30 caps)","desc":"Alta dosagem para performance cognitiva avançada, resposta rápida e sustentação intensa em rotinas exigentes.","options":[{"label":"Pote (30 caps)","price":"R$ 530,00","numPrice:530},{"label":"Cápsula (1 cap)","price":"R$ 30,00","numPrice:30}]},
+      {"id":"9","category":"Novax","name":"PT-141 (10mg + 2ml Água Bac)","desc":"Peptídeo voltado ao estímulo do desejo e da resposta sexual com ação central (até 10 aplicações fracionadas).","options":[{"label":"Frasco","price":"R$ 550,00","numPrice:550},{"label":"Aplicação / Dose","price":"R$ 100,00","numPrice:100}]},
+      {"id":"10","category":"Farmácia","name":"Finasterida 1mg (30cp)","desc":"Inibidor da 5-alfa-redutase para prevenção da queda capilar androgenética.","options":[{"label":"Caixa (30cp)","price":"R$ 45,00","numPrice:45}]},
+      {"id":"11","category":"Farmácia","name":"Minoxidil 5% (60ml)","desc":"Solução tópica vasodilatadora para estímulo do crescimento capilar.","options":[{"label":"Frasco (60ml)","price":"R$ 65,00","numPrice:65}]},
+      {"id":"12","category":"Farmácia","name":"Melatonina 5mg (60cp)","desc":"Suporte para regulação do ciclo do sono e recuperação noturna.","options":[{"label":"Frasco (60cp)","price":"R$ 55,00","numPrice:55}]},
+      {"id":"13","category":"King","name":"Enantato de Testosterona King","desc":"Éster de meia-vida prolongada para suporte hormonal e ganho de força e massa.","options":[{"label":"Bujao 10ml","price":"R$ 180,00","numPrice:180}]},
+      {"id":"14","category":"King","name":"Decanoato de Nandrolona King","desc":"Composto anabólico voltado a ganhos sólidos e conforto articular.","options":[{"label":"Bujao 10ml","price":"R$ 190,00","numPrice:190}]},
+      {"id":"15","category":"King","name":"Boldenona Undecilenato King","desc":"Auxilia no ganho gradual de massa magra, vascularização e apetite.","options":[{"label":"Bujao 10ml","price":"R$ 185,00","numPrice:185}]},
+      {"id":"16","category":"King","name":"Trembolona Acetato King","desc":"Composto potente para densidade muscular e definição em fases avançadas.","options":[{"label":"Bujao 10ml","price":"R$ 220,00","numPrice:220}]},
+      {"id":"17","category":"King","name":"Masteron Propionato King","desc":"Favorece aspecto seco, rigidez muscular e definição.","options":[{"label":"Bujao 10ml","price":"R$ 210,00","numPrice:210}]},
+      {"id":"18","category":"King","name":"Stanozolol Injetável King","desc":"Voltado para qualidade muscular, força e redução de retenção.","options":[{"label":"Bujao 10ml","price":"R$ 175,00","numPrice:175}]},
+      {"id":"19","category":"King","name":"Oxandrolona 10mg King","desc":"Opção oral associada a ganhos limpos e preservação de massa magra.","options":[{"label":"Pote (100cp)","price":"R$ 210,00","numPrice:210}]},
+      {"id":"20","category":"King","name":"Dianabol 10mg King","desc":"Composto oral de ação rápida para força e volume inicial.","options":[{"label":"Pote (100cp)","price":"R$ 140,00","numPrice:140}]},
+      {"id":"21","category":"Lander","name":"Durateston Landerlan","desc":"Blend de quatro ésteres de testosterona para liberação gradual.","options":[{"label":"Bujao","price":"R$ 195,00","numPrice:195}]},
+      {"id":"22","category":"Lander","name":"Deposteron / Cipionato Landerlan","desc":"Éster de ação prolongada para estabilidade hormonal.","options":[{"label":"Bujao","price":"R$ 185,00","numPrice:185}]},
+      {"id":"23","category":"Lander","name":"Deca Landerlan","desc":"Suporte anabólico clássico para volume e recuperação.","options":[{"label":"Bujao","price":"R$ 190,00","numPrice:190}]},
+      {"id":"24","category":"Lander","name":"Equipoise / Boldenona Landerlan","desc":"Promove ganhos consistentes e melhora do aspecto físico.","options":[{"label":"Bujao","price":"R$ 185,00","numPrice:185}]},
+      {"id":"25","category":"Lander","name":"Stanozolol Landerlan","desc":"Foco em definição, firmeza e força.","options":[{"label":"Bujao","price":"R$ 175,00","numPrice:175}]},
+      {"id":"26","category":"Lander","name":"Oxandrolona Landerlan","desc":"Comprimidos voltados a qualidade muscular e definição.","options":[{"label":"Frasco","price":"R$ 220,00","numPrice:220}]},
+      {"id":"27","category":"Lander","name":"Clenbuterol Landerlan","desc":"Termogênico beta-2 agonista para auxílio em fases de cutting.","options":[{"label":"Frasco","price":"R$ 120,00","numPrice:120}]},
+      {"id":"28","category":"Lander","name":"HCG Landerlan","desc":"Gonadotrofina coriônica humana utilizada em protocolos específicos.","options":[{"label":"Caixa","price":"R$ 240,00","numPrice:240}]},
+      {"id":"29","category":"Lander","name":"Enantato de Testosterona Landerlan","desc":"Testosterona de liberação sustentada para base de protocolo, força e massa muscular.","options":[{"label":"Bujao 10ml","price":"R$ 230,00","numPrice:230}]}
+    ];
+
+    const CATEGORIES = ["Todos", "Farmácia", "King", "Lander", "Novax"];
+    let activeCategory = "Todos";
+    let cart = [];
+
+    function getBadgeClass(c) {
+      return "Farmácia" === c ? "badge-farmacia" : "King" === c ? "badge-king" : "Lander" === c ? "badge-lander" : "badge-novax";
+    }
+
+    function renderTabs() {
+      const w = document.getElementById("tabsContainer");
+      w.innerHTML = "";
+      CATEGORIES.forEach(c => {
+        const n = "Todos" === c ? PRODUCTS.length : PRODUCTS.filter(p => p.category === c).length;
+        const b = document.createElement("button");
+        b.className = "tab-pill" + (activeCategory === c ? " active" : "");
+        b.innerHTML = `<span>${c}</span><span class="tab-count">${n}</span>`;
+        b.onclick = () => { activeCategory = c; render(); };
+        w.appendChild(b);
+      });
+    }
+
+    function getQty(id, l) {
+      const f = cart.find(i => i.prodId === id && i.label === l);
+      return f ? f.qty : 0;
+    }
+
+    function addItem(id, name, l, price, num) {
+      const f = cart.find(i => i.prodId === id && i.label === l);
+      if (f) { f.qty += 1; } else { cart.push({ prodId: id, prodName: name, label: l, price: price, numPrice: num, qty: 1 }); }
+      updateBadges();
+      render();
+    }
+
+    function changeQty(id, l, d) {
+      const i = cart.findIndex(x => x.prodId === id && x.label === l);
+      if (-1 !== i) {
+        cart[i].qty += d;
+        if (cart[i].qty <= 0) { cart.splice(i, 1); }
+        updateBadges();
+        render();
+        if (!document.getElementById("cartModal").classList.contains("hidden")) { renderCartModal(); }
+      }
+    }
+
+    function updateBadges() {
+      const t = cart.reduce((a, b) => a + b.qty, 0);
+      document.getElementById("headerCartBadge").textContent = t;
+    }
+
+    function clearSearch() {
+      const i = document.getElementById("searchInput");
+      i.value = "";
+      document.getElementById("btnClear").style.display = "none";
+      render();
+    }
+
+    function render() {
+      renderTabs();
+      const i = document.getElementById("searchInput");
+      const t = (i ? i.value : "").trim().toLowerCase();
+      document.getElementById("btnClear").style.display = t ? "block" : "none";
+      const f = PRODUCTS.filter(p => ("Todos" === activeCategory || p.category === activeCategory) && (!t || p.name.toLowerCase().includes(t) || p.category.toLowerCase().includes(t) || p.desc.toLowerCase().includes(t)));
+      document.getElementById("counterBadge").textContent = `${f.length} ${1 === f.length ? "item" : "itens"}`;
+      const g = document.getElementById("productGrid");
+      const e = document.getElementById("emptyState");
+      g.innerHTML = "";
+      if (0 === f.length) { e.style.display = "block"; return; }
+      e.style.display = "none";
+      f.forEach(p => {
+        const c = document.createElement("article");
+        c.className = "card";
+        const o = p.options.map(op => {
+          const q = getQty(p.id, op.label);
+          const sn = p.name.replace(/'/g, "\\'");
+          const sl = op.label.replace(/'/g, "\\'");
+          const ct = q > 0
+            ? `<div class="qty-controls"><button class="qty-btn" onclick="changeQty('${p.id}','${sl}',-1)">-</button><span class="qty-val">${q} no pedido</span><button class="qty-btn" onclick="changeQty('${p.id}','${sl}',1)">+</button></div>`
+            : `<button class="btn-add-interest" onclick="addItem('${p.id}','${sn}','${sl}','${op.price}',${op.numPrice})">+ Adicionar ao pedido</button>`;
+          return `<div class="price-option-row"><div class="opt-info"><span class="opt-label">${op.label}</span><span class="opt-price">${op.price}</span></div>${ct}</div>`;
+        }).join("");
+        c.innerHTML = `<div><div class="card-header-info"><span class="brand-badge ${getBadgeClass(p.category)}">${p.category}</span><h2 class="card-title">${p.name}</h2></div><div class="desc-box"><div class="desc-title">Para que serve</div><p class="card-desc">${p.desc}</p></div></div><div class="price-box">${o}</div>`;
+        g.appendChild(c);
+      });
+    }
+
+    function openCartModal() {
+      renderCartModal();
+      document.getElementById("cartModal").classList.remove("hidden");
+    }
+
+    function closeCartModal() {
+      document.getElementById("cartModal").classList.add("hidden");
+    }
+
+    function renderCartModal() {
+      const l = document.getElementById("cartItemsList");
+      if (0 === cart.length) {
+        l.innerHTML = '<div style="text-align:center;color:#94a3b8;padding:20px;">Seu pedido está vazio. Adicione itens no catálogo.</div>';
+        document.getElementById("cartTotalVal").textContent = "R$ 0,00";
+        return;
+      }
+      let t = 0;
+      l.innerHTML = cart.map(x => {
+        const s = x.numPrice * x.qty;
+        t += s;
+        const sl = x.label.replace(/'/g, "\\'");
+        return `<div class="cart-item-row"><div class="cart-item-info"><span class="cart-item-name">${x.qty}x ${x.prodName}</span><span class="cart-item-opt">${x.label} • ${x.price}</span></div><button class="btn-remove" onclick="changeQty('${x.prodId}','${sl}',-${x.qty})">✕</button></div>`;
+      }).join("");
+      document.getElementById("cartTotalVal").textContent = t.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+    }
+
+    function showToast(m) {
+      const t = document.getElementById("toast");
+      t.textContent = m;
+      t.classList.add("show");
+      setTimeout(() => t.classList.remove("show"), 2500);
+    }
+
+    function copyAndDirectWhatsApp() {
+      if (0 === cart.length) { showToast("Adicione pelo menos 1 item primeiro."); return; }
+      const n = document.getElementById("customerName").value.trim();
+      let t = 0;
+      const lines = cart.map(x => { t += x.numPrice * x.qty; return `• ${x.qty}x ${x.prodName} (${x.label}) - ${x.price}`; });
+      const txt = [n ? `Olá! Meu nome é ${n}. Gostaria de fazer este pedido:` : "Olá! Gostaria de fazer este pedido:", ...lines, `Total estimado: ${t.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}`].join("\n");
+      if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(txt).catch(() => {}); }
+      showToast("✓ Pedido copiado!");
+      window.open("https://wa.me/?text=" + encodeURIComponent(txt), "_blank");
+    }
+
+    render();
+  </script>
+</body>
+</html>
